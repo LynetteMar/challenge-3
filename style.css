@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map{
+    height: 100%;
+    border: 5px solid white;
+    }
+
+#map p{
+    color: black;
+}
+#map b{
+    font-weight: 700;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+strong{
+    font-weight: 800;
+    font-style: italic;
+}
+
+body{
+    background: url("../img/starry.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 'Allerta Stencil', sans-serif;
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+h2{
+    font-family: 'Muli', sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+h3{
+    font-family: 'Muli', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+p{
+    font-family: 'Muli', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+
+.grid-container /*body*/{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    grid-gap: 0px;
+    
+    grid-template-areas: 
+        "intr"
+        "inf"
+        "map";
+}
+
+/*GRID AREAS*/
+.landingsmap{
+    grid-area: map;
+    height: 400px;
+}
+
+.info{
+    grid-area: inf;
+} 
+
+.intro{
+    grid-area: intr;
+} 
+
+.grid-item{
+    padding: 30px;
+}
+
+/*MEDIA QUERY MID*/
+@media only screen and (min-width: 480px) {
+    #map{
+    height: 100%;
+    border: 5px solid white;
+    }
+    
+    h1{
+        font-family: 'Allerta Stencil', sans-serif;
+        color: white;
+        font-size: 35px;
+    }
+
+    h2{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 30px;
+        font-weight: 800;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    h3{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 10px;
+    }
+
+    p{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 18px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        grid-gap: 0px;
+
+        grid-template-areas: 
+            "intr"
+            "inf"
+            "map";
+    }
+    
+    .landingsmap{
+    grid-area: map;
+    height: 400px;
+    }
+
+    .info{
+        grid-area: inf;
+    } 
+
+    .intro{
+        grid-area: intr;
+    } 
+
+    .grid-item{
+        padding: 20px;
+    }
+
+    /*GRID AREAS*/
+
+}
+
+/*MEDIA QUERY LARGE*/
+@media only screen and (min-width: 840px) {
+    h1{
+        font-family: 'Allerta Stencil', sans-serif;
+        color: white;
+        font-size: 40px;
+    }
+
+    h2{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 35px;
+        font-weight: 800;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    h3{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 10px;
+    }
+
+    p{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 18px;
+    }
+
+     .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: 100%;
+        grid-gap: 0px;
+
+        grid-template-areas: 
+            "intr map"
+            "inf map";
+    }
+    .landingsmap{
+        grid-area: map;
+        height: 600px;
+    }
+
+    .info{
+        grid-area: inf;
+    } 
+
+    .intro{
+        grid-area: intr;
+    } 
+
+    .grid-item{
+        padding: 20px;
+    }
+    /*GRID AREAS*/
+
+}
+
+/*MEDIA QUERY XL*/
+@media only screen and (min-width: 1200px) {
+
+    h1{
+        font-family: 'Allerta Stencil', sans-serif;
+        color: white;
+        font-size: 45px;
+    }
+
+    h2{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 35px;
+        font-weight: 800;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    h3{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 10px;
+    }
+
+    p{
+        font-family: 'Muli', sans-serif;
+        color: white;
+        font-size: 18px;
+    }
+     .grid-container{
+        display: grid;
+        grid-template-columns: 2fr;
+        height: 100%;
+        grid-gap: 0px;
+
+        grid-template-areas: 
+            "intr inf"
+            "map map";
+    }
+    
+    .landingsmap{
+    grid-area: map;
+    height: 400px;
+    }
+
+    .info{
+        grid-area: inf;
+    } 
+
+    .intro{
+        grid-area: intr;
+    } 
+
+    .grid-item{
+        padding: 20px;
+    }
+
+    /*GRID AREAS*/
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        
+        <title>Perfecte landingsplek</title>
+        
+        <meta name="title" content="Landingsplek" />
+        <meta name="description" content="Mars, Landingsplek" />
+        <meta name="keywords" content="Mars, Landingsplek" />
+        
+        <meta name="og:image" content=""/>
+        
+        <!-- stylesheet reset -->
+		<link href="css/reset.css" type="text/css" rel="stylesheet" media="screen">
+        
+        <!-- stylesheet mobile-->
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div id="content" class="grid-container">
+            <div class="grid-item intro">
+                <h1>Interplanetary Transport System (ITS)</h1>
+                <h3>Fijne terugkeer op aarde!</h3>
+            </div>
+            <div class="grid-item info">
+                <h2>Informatie</h2>
+                <p><strong>Het jaar 2068</strong></p>
+                <p><strong>Passagiersaantal: 32 mensen</strong></p>
+                <h2><i>Wat er te vinden zal zijn op de kaart</i></h2>
+                <p>
+                    Bewolking of weercondities - Hoogte van de landingsplek -
+                    Reistijd tussen het basisstation bij het Kennedy Space Center, Cape Canaveral, Florida en de landingsplek -
+                    Preview van de landingsplekken -
+                    Aangeven waar de beste landingsplekken zijn
+                </p>
+            </div>
+            <div class="grid-item landingsmap">
+                <h2>De perfecte landingsbaan</h2>
+                <div id="map"></div>
+            </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChV3dETe-usALCZvY3gioeBxGTc8jQrRQ&callback=initMap"
+        async defer></script>
+       
+        <!--<script src= "https://tile.openweathermap.org/map/{layer}/{z}/{x}/{y}.png?appid={3ba9a8f6192793a53d5d55261a1ac15c}" async defer></script>
+        
+        <script type="text/javascript" src="https://maps.googleapis.com/mapps/api/js?client=AIzaSyChV3dETe-usALCZvY3gioeBxGTc8jQrRQ&callback">
+        </script>-->
+        
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/markers.js"></script>
+    </body>
+</html>
